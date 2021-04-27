@@ -8,7 +8,10 @@
 </head>
 <body>
     
+    <header>
     <h1>Tarea de HTML</h1>
+    </header>
+
 
     <h2><u>Ejercicio 1</u></h2>
     
@@ -96,7 +99,49 @@
 
     <h2><u>Ejercicio 4</u></h2>
 
-<u></u>
+    <h3>Menú</h3>
+
+    <ul>
+        <li><b>Inicio</b></li>
+        <li><b>Noticias</b></li>
+            <ul>
+                <li><a href="https://www.paginadeejemplo.com/Recientes.html"><u>Recientes</u></a></li>
+                <li><a href="https://www.paginadeejemplo.com/Mas_Leidas.html"><u>Mas leídas</u></a></li>
+            </ul>
+        <li><b>Artículos</b></li>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>Otros</li>
+            </ol>
+        <li>Contacto</li>
+            <li>Email: nombre@direccion.com</li>
+            <li>Teléfono 000 000 000</li>
+    </ul>
+
+    <h2><u>Ejercicio 5</u></h2>
+
+    <h3><b>Cargue su CV</b></h3>
+
+    <form action="./curriculum_vitae.php">
+        <label for="nombre">Nombre y apellido:</label>
+        <input type="text" name="nombre">
+        <label for="dni">DNI:</label>
+        <input type="number" name="dni">
+        <p>Genero:</p>
+        <input type="radio" name="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" name="no_contesta">
+        <label for="no_contesta">Prefiero no contestar</label>
+        <label for="carga_cv">Cargue su CV</label>
+        <input type="file" name="carga_cv">
+        <input type="checkbox" name="tos">
+        <label for="tos">Acepto los terminos y condiciones</label>
+        <input type="submit" value="Enviar">      
+    </form>
 
 </body>
 </html>
